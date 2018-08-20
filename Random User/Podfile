@@ -7,8 +7,6 @@ target 'Random User' do
 
   # Pods for Random User
 
-pod 'Alamofire'
-pod 'SwiftyJSON'
-pod 'MBProgressHUD'
+pod 'SVProgressHUD'
 
 end

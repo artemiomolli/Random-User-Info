@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		9DD8A6322129AFCF00887C6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD8A6312129AFCF00887C6A /* AppDelegate.swift */; };
-		9DD8A6342129AFCF00887C6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD8A6332129AFCF00887C6A /* ViewController.swift */; };
+		9DD8A6342129AFCF00887C6A /* UserlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD8A6332129AFCF00887C6A /* UserlistViewController.swift */; };
 		9DD8A6372129AFCF00887C6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DD8A6352129AFCF00887C6A /* Main.storyboard */; };
 		9DD8A6392129AFD100887C6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DD8A6382129AFD100887C6A /* Assets.xcassets */; };
 		9DD8A63C2129AFD100887C6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DD8A63A2129AFD100887C6A /* LaunchScreen.storyboard */; };
 		9DD8A64B2129B24300887C6A /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD8A64A2129B24300887C6A /* ApiManager.swift */; };
+		9DE9C2312129EF75003802D9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE9C2302129EF75003802D9 /* User.swift */; };
+		9DE9C2352129F160003802D9 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE9C2342129F160003802D9 /* Parser.swift */; };
+		9DE9C2392129F65F003802D9 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE9C2372129F65F003802D9 /* UserTableViewCell.swift */; };
+		9DE9C23A2129F65F003802D9 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DE9C2382129F65F003802D9 /* UserTableViewCell.xib */; };
+		9DE9C23D212A068B003802D9 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE9C23C212A068B003802D9 /* InfoViewController.swift */; };
 		B79DFEBB22D6E7BD2994C671 /* Pods_Random_User.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A7C2179F4D0038A612D11E /* Pods_Random_User.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,12 +26,17 @@
 		5E0EC9358CB7387A8CE3E8FC /* Pods-Random User.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Random User.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Random User/Pods-Random User.debug.xcconfig"; sourceTree = "<group>"; };
 		9DD8A62E2129AFCF00887C6A /* Random User.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Random User.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DD8A6312129AFCF00887C6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9DD8A6332129AFCF00887C6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9DD8A6332129AFCF00887C6A /* UserlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserlistViewController.swift; sourceTree = "<group>"; };
 		9DD8A6362129AFCF00887C6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DD8A6382129AFD100887C6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DD8A63B2129AFD100887C6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DD8A63D2129AFD100887C6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DD8A64A2129B24300887C6A /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		9DE9C2302129EF75003802D9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9DE9C2342129F160003802D9 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		9DE9C2372129F65F003802D9 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		9DE9C2382129F65F003802D9 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		9DE9C23C212A068B003802D9 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		9E1585AA0295AC2146850A49 /* Pods-Random User.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Random User.release.xcconfig"; path = "Pods/Target Support Files/Pods-Random User/Pods-Random User.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,7 +86,6 @@
 				9DD8A6472129B1E600887C6A /* View */,
 				9DD8A6462129B1DE00887C6A /* Controller */,
 				9DD8A6312129AFCF00887C6A /* AppDelegate.swift */,
-				9DD8A6332129AFCF00887C6A /* ViewController.swift */,
 				9DD8A6352129AFCF00887C6A /* Main.storyboard */,
 				9DD8A6382129AFD100887C6A /* Assets.xcassets */,
 				9DD8A63A2129AFD100887C6A /* LaunchScreen.storyboard */,
@@ -88,6 +97,8 @@
 		9DD8A6462129B1DE00887C6A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9DD8A6332129AFCF00887C6A /* UserlistViewController.swift */,
+				9DE9C23C212A068B003802D9 /* InfoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -95,6 +106,7 @@
 		9DD8A6472129B1E600887C6A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9DE9C2362129F645003802D9 /* UserCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -102,6 +114,8 @@
 		9DD8A6482129B1F400887C6A /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				9DE9C2332129F14C003802D9 /* Extensions */,
+				9DE9C2322129EF7B003802D9 /* UserInfo */,
 				9DD8A6492129B1F900887C6A /* APIManager */,
 			);
 			path = Logic;
@@ -113,6 +127,31 @@
 				9DD8A64A2129B24300887C6A /* ApiManager.swift */,
 			);
 			path = APIManager;
+			sourceTree = "<group>";
+		};
+		9DE9C2322129EF7B003802D9 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				9DE9C2302129EF75003802D9 /* User.swift */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		9DE9C2332129F14C003802D9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9DE9C2342129F160003802D9 /* Parser.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9DE9C2362129F645003802D9 /* UserCell */ = {
+			isa = PBXGroup;
+			children = (
+				9DE9C2372129F65F003802D9 /* UserTableViewCell.swift */,
+				9DE9C2382129F65F003802D9 /* UserTableViewCell.xib */,
+			);
+			path = UserCell;
 			sourceTree = "<group>";
 		};
 		FB29144DB80A5E9C628EE782 /* Frameworks */ = {
@@ -183,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DE9C23A2129F65F003802D9 /* UserTableViewCell.xib in Resources */,
 				9DD8A63C2129AFD100887C6A /* LaunchScreen.storyboard in Resources */,
 				9DD8A6392129AFD100887C6A /* Assets.xcassets in Resources */,
 				9DD8A6372129AFCF00887C6A /* Main.storyboard in Resources */,
@@ -217,15 +257,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Random User/Pods-Random User-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -239,8 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DD8A6342129AFCF00887C6A /* ViewController.swift in Sources */,
+				9DE9C2312129EF75003802D9 /* User.swift in Sources */,
+				9DD8A6342129AFCF00887C6A /* UserlistViewController.swift in Sources */,
+				9DE9C2352129F160003802D9 /* Parser.swift in Sources */,
+				9DE9C23D212A068B003802D9 /* InfoViewController.swift in Sources */,
 				9DD8A64B2129B24300887C6A /* ApiManager.swift in Sources */,
+				9DE9C2392129F65F003802D9 /* UserTableViewCell.swift in Sources */,
 				9DD8A6322129AFCF00887C6A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

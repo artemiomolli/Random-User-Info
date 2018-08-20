@@ -7,29 +7,71 @@
 //
 
 import Foundation
-import SwiftyJSON
-import Alamofire
 
-typealias CompletionBlock = (JSON?, Error?) -> Void
 
+fileprivate enum RandomUserEndoints: String {
+    
+    case kBaseURL = "https://randomuser.me/api?results=20"
+}
 
 class ApiManager {
     
-    //MARK: - Helpers
+    static let sharedInstanse  = ApiManager()
+
+    //MARK: - Public methods
     
-    private func performRequest(url: String, method: HTTPMethod, params: Parameters?, headers: HTTPHeaders?, completion: @escaping CompletionBlock) {
+    func getUserList(completion: @escaping ([UserInfo], Error?) -> Void) {
         
-        Alamofire.request(url, method: method, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { response in
 
-            switch response.result {
+        let url = URL(string:RandomUserEndoints.kBaseURL.rawValue )!
+        
+        let task = URLSession.shared.dataTask(with: url) {data, response, error in
 
-            case .success(let value):
-                let json = JSON(value)
-                completion(json, nil)
+            var usersList = [UserInfo]()
+            if let dataParse = data {
+                
+                usersList = self.parseUsersJSON(from: dataParse)
+            }
+            
+            if let error = error {
+                print(error)
+            }
+            
+            completion(usersList, error)
+        }
+        
+        task.resume()
+    }
 
-            case .failure(let error):
-                completion(nil,error)
+         //MARK: - Private methods
+    
+    
+    private func parseUsersJSON(from data: Data) -> [UserInfo] {
+        
+        do {
+            if let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] {
+                
+                var users = [UserInfo]()
+                
+                for userJSON in json.array("results") {
+                    
+                    if let user = UserInfo(json: userJSON) {
+                        
+                        users.append(user)
+                    }
+                }
+                return users
+            }
+        } catch {
+            
+            print("Can`t parse JSON: \(error)")
+            
+            if let utf8String = String(data: data, encoding: String.Encoding.utf8) {
+                
+                print("Received: \(utf8String)")
             }
         }
+        
+        return []
     }
 }
