@@ -22,9 +22,6 @@ class InfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationController?.navigationBar.tintColor = UIColor.white
-        
         
         usernameLabel.text = userData.userName
         firstnameLabel.text = userData.firstName

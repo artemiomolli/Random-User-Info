@@ -21,7 +21,6 @@ class ApiManager {
     //MARK: - Public methods
     
     func getUserList(completion: @escaping ([UserInfo], Error?) -> Void) {
-        
 
         let url = URL(string:RandomUserEndoints.kBaseURL.rawValue )!
         

@@ -97,8 +97,8 @@
 		9DD8A6462129B1DE00887C6A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9DD8A6332129AFCF00887C6A /* UserlistViewController.swift */,
-				9DE9C23C212A068B003802D9 /* InfoViewController.swift */,
+				9DE9C23F212A9EA6003802D9 /* UserList */,
+				9DE9C23E212A9E9A003802D9 /* UserInfo */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -152,6 +152,22 @@
 				9DE9C2382129F65F003802D9 /* UserTableViewCell.xib */,
 			);
 			path = UserCell;
+			sourceTree = "<group>";
+		};
+		9DE9C23E212A9E9A003802D9 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				9DE9C23C212A068B003802D9 /* InfoViewController.swift */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		9DE9C23F212A9EA6003802D9 /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				9DD8A6332129AFCF00887C6A /* UserlistViewController.swift */,
+			);
+			path = UserList;
 			sourceTree = "<group>";
 		};
 		FB29144DB80A5E9C628EE782 /* Frameworks */ = {

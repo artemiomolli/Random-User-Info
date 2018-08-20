@@ -15,6 +15,8 @@ class UserlistViewController:UIViewController {
     
     var usersData: [UserInfo]!
     
+    // MARK: - View life Cycle
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -44,13 +46,14 @@ class UserlistViewController:UIViewController {
     
     }
     
+      // MARK: - Logic
+    
     func registerNibs()  {
         
         let userCell = UINib(nibName: "UserTableViewCell", bundle: nil)
         
         tableView.register(userCell, forCellReuseIdentifier: "currentUser")
     }
-    
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
